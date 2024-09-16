@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Project Management</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo-circle">D</div>
+        <h1><span class="deep">DEEP</span> THOUGHT</h1>
+      </div>
+      <nav>
+        <button class="icon-button"><i class="fas fa-home"></i></button>
+        <button class="icon-button"><i class="fas fa-tools"></i></button>
+        <button class="icon-button"><i class="fas fa-bell"></i></button>
+        <button class="profile-button"></button>
+        <button class="icon-button"><i class="fas fa-ellipsis-v"></i></button>
+      </nav>
+    </header>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <div class="journey-board">
+          <h3>Journey Board</h3>
+          <button class="close-sidebar"><i class="fas fa-times"></i></button>
+        </div>
+        <ul>
+          <li>Explore the world of management</li>
+          <li>Technical Project Management</li>
+          <li>Threadbuild</li>
+          <li>Structure your pointers</li>
+          <li>4SA Method</li>
+        </ul>
+      </aside>
+
+      <main>
+       
+
+        <div class="title-bar">
+          <div class="title-with-button">
+            <button id="toggleSidebar" class="toggle-sidebar">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <h2>Technical Project Management</h2>
+          </div>
+          <button class="submit-button">Submit task</button>
+        </div>
+
+        <div class="intro-box">
+          <h3>Explore the world of management</h3>
+          <p>
+            As a project manager, you play an important role in leading a
+            project through initiation, planning, execution, monitoring,
+            controlling and completion. How? Do you want to manage each and
+            every step of your life?
+          </p>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>
+              Technical Project Management <span class="info-circle">i</span>
+            </h3>
+            <p>
+              Story of Alignment Scope of Agility Specific Accountable
+              Staggering Approach
+            </p>
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/TKfS5zVfGBc"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <h3>Threadbuild <span class="info-circle">i</span></h3>
+            <p>
+              Watch the video and threadbuild, and jot out key threads while
+              watching the video
+            </p>
+            <div class="thread-container">
+              <button class="thread-button" onclick="toggleThread('threadA')">
+                Thread A <span class="arrow">▼</span>
+              </button>
+              <div id="threadA" class="thread-content">
+                <div class="input-group">
+                  <input type="text" placeholder="Sub thread 1" />
+                  <input type="text" placeholder="Sub interpretation 1" />
+                </div>
+                <div class="thread-actions">
+                  <div class="action-buttons">
+                    <button><i class="fas fa-lightbulb"></i></button>
+                    <button><i class="fas fa-comment"></i></button>
+                    <button><i class="fas fa-question"></i></button>
+                    <button><i class="fas fa-paperclip"></i></button>
+                  </div>
+                  <div class="select-group">
+                    <select>
+                      <option>Select Categ</option>
+                    </select>
+                    <select>
+                      <option>Select Process</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="sub-thread-button">+ Sub-thread</button>
+                <textarea placeholder="Summary for Thread A"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <h3>Structure your Pointers <span class="info-circle">i</span></h3>
+            <p>
+              Write a 300 - 400 word article from your thread. Publish your
+              understanding and showcase your learning to the entire world
+            </p>
+            <input type="text" placeholder="Title" class="full-width" />
+            <div class="text-editor">
+              <div class="editor-menu">
+                <button>File</button>
+                <button>Edit</button>
+                <button>View</button>
+                <button>Insert</button>
+                <button>Format</button>
+                <button>Tools</button>
+                <button>Table</button>
+                <button>Help</button>
+              </div>
+              <div class="editor-actions">
+                <button><i class="fas fa-undo"></i></button>
+                <button><i class="fas fa-redo"></i></button>
+                <span class="separator">|</span>
+                <select>
+                  <option>Paragraph</option>
+                </select>
+                <button><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <h3>4SA Method <span class="info-circle">i</span></h3>
+            <p>To Explore more read more</p>
+            <div class="method-container">
+              <button
+                class="method-button"
+                onclick="toggleMethod('introduction')"
+              >
+                Introduction <span class="arrow">▼</span>
+              </button>
+              <div id="introduction" class="method-content">
+                <p>The 4SA Method, How to bring a idea into progress?</p>
+                <button class="see-more">See More</button>
+              </div>
+              <button
+                class="method-button"
+                onclick="toggleMethod('threadA4SA')"
+              >
+                Thread A <span class="arrow">▼</span>
+              </button>
+              <div id="threadA4SA" class="method-content">
+                <p>
+                  How are you going to develop your strategy? Which method are
+                  you going to use to develop a strategy? What if the project is
+                  lengthy?
+                </p>
+                <button class="see-more">See More</button>
+                <div class="example-box">
+                  <h4>Example 1</h4>
+                  <p>You have a concept, How will you put into progress?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="floating-buttons">
+      <button><i class="fas fa-question"></i></button>
+      <button><i class="fas fa-users"></i></button>
+      <button><i class="fas fa-calendar"></i></button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
